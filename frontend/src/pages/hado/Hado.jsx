@@ -15,6 +15,7 @@ function Hado() {
 
 
     return (
+
         <div className="hado-container">
             <h1>Hado</h1>
 

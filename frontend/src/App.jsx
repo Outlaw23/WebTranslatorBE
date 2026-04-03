@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout.jsx";
 
 import Home from "./pages/home/Home";
 import Hado from "./pages/hado/Hado";

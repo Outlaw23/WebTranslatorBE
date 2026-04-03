@@ -25,7 +25,7 @@ a:hover {
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: url("src/assets/background_spider.jpeg");
+  background-image: url("/background_spider.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,9 +38,11 @@ body {
 }
 
 .content {
-  flex: 1;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 40px auto;
+  padding: 0 20px;
+  flex: 1;
 }
 
 .navbar {
@@ -52,8 +54,11 @@ body {
 }
 
 .nav-container {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
+
   margin: auto;
+  padding: 0 20px;
 }
 
 .nav-container a {

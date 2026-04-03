@@ -50,4 +50,6 @@ the hadoR screen will translate any hado language back to which language it tran
 
 ### link to app variant
 https://github.com/Outlaw23/Translator
+### link to hado language website
+https://hadolanguage.nl/public
 

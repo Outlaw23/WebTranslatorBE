@@ -19,6 +19,11 @@ out/
 
 backend/target/
 
+# Backend build- en Dockerbestanden
+backend/BOOT-INF/
+backend/*.tar
+backend/src/main/resources/application.properties
+
 
 # Frontend (React)
 

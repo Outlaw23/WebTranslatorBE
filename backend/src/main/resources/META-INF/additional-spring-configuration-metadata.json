@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "app.frontend-origin",
+      "type": "java.lang.String",
+      "description": "Website die toegang krijgt tot de backend."
+    },
+    {
+      "name": "app.translate-path",
+      "type": "java.lang.String",
+      "description": "Basispad voor de vertaal-API."
+    }
+  ]
+}

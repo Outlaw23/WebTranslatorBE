@@ -34,6 +34,10 @@ explanations of what each screen does (besides the home, login screens).
 here is information about the hado language
 ![info_screen.png](Img_README/info_Screen.png)
 ---
+#### Learn screen
+On the learn screen, you can see an assignment you can complete to practice Hado.
+![learn_Screen.png](Img_README/learn_Screen.png)
+---
 #### Hado screen
 the hado screen translates any language to hado language, but for example, English hado is different from Dutch hado
 ![hado_screen.png](Img_README/hado_Screen.png)

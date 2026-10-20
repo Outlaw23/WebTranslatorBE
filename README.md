@@ -41,10 +41,15 @@ On the learn screen, you can see an assignment you can complete to practice Hado
 #### Hado screen
 the hado screen translates any language to hado language, but for example, English hado is different from Dutch hado
 ![hado_screen.png](Img_README/hado_Screen.png)
-
+---
 #### HadoR screen
 the hadoR screen will translate any hado language back to which language it translates
 ![hador_screen.png](Img_README/hadoR_Screen.png)
+---
+#### Hado_quiz_explanation screen
+Here is the explanation for the Hado quiz.
+![Hado_quiz_explanation.png](Img_README/Hado_quiz_explanation.png)
+
 ### what I'm still working on
 
 - bugs

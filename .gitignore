@@ -22,8 +22,7 @@ backend/target/
 # Backend build- en Dockerbestanden
 backend/BOOT-INF/
 backend/*.tar
-backend/src/main/resources/application.properties
-
+backend/src/main/resources/application-local.properties
 
 # Frontend (React)
 
@@ -51,4 +50,3 @@ dist/
 *.swp
 
 # Spring config
-src/main/resources/application-local.properties

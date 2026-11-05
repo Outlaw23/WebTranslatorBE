@@ -81,7 +81,7 @@ jobs:
           key: ${{ secrets.NAS_SSH_KEY }}
           envs: IMAGE,GHCR_USER,GHCR_TOKEN
           script: |
-            echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USER" --password-stdin
+            echo "$GHCR_TOKEN" | /usr/local/bin/docker login ghcr.io -u "$GHCR_USER" --password-stdin
             /usr/local/bin/docker pull "$IMAGE"
             /usr/local/bin/docker rm -f backend || true
             /usr/local/bin/docker run -d \

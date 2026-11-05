@@ -13,6 +13,22 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    services:
+      mariadb:
+        image: mariadb:10.11.11
+        env:
+          MARIADB_ROOT_PASSWORD: ci_root_password
+          MARIADB_DATABASE: backend_test
+          MARIADB_USER: ci_backend
+          MARIADB_PASSWORD: ci_backend_password
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+
     steps:
       - name: Repository ophalen
         uses: actions/checkout@v4
@@ -26,6 +42,10 @@ jobs:
 
       - name: Bouwen en testen
         run: mvn -B -f backend/pom.xml verify
+        env:
+          SPRING_DATASOURCE_URL: jdbc:mariadb://127.0.0.1:3306/backend_test
+          SPRING_DATASOURCE_USERNAME: ci_backend
+          SPRING_DATASOURCE_PASSWORD: ci_backend_password
 
       - name: GHCR-image naam instellen
         id: image

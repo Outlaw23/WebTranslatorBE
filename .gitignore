@@ -49,3 +49,6 @@ dist/
 *.tmp
 *.temp
 *.swp
+
+# Spring config
+src/main/resources/application-local.properties
